@@ -93,9 +93,13 @@ export default function Hero() {
               src="/images/hero.jpg"
               fill
               priority
+              quality={90}
               alt="Aerial view of Zanzibar coastline and Indian Ocean — ZanAir scenic flights"
-              className="object-cover object-center"
               sizes="100vw"
+              style={{
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
             />
           </div>
         </div>
