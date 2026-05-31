@@ -90,7 +90,7 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="https://res.cloudinary.com/dmvpm094o/image/upload/f_auto,q_auto/Hero_ev3vgw"
+          href="https://res.cloudinary.com/dmvpm094o/image/upload/w_1200,q_80,f_auto/Hero_ev3vgw"
           fetchPriority="high"
         />
         <script

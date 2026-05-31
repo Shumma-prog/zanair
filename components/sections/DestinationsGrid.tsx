@@ -102,6 +102,7 @@ export default function DestinationsGrid() {
     <section
       className="py-24 md:py-32 bg-page-white"
       aria-label="ZanAir destinations"
+      style={{ contain: "layout" }}
     >
       {/* Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">

@@ -6,18 +6,19 @@ export default function Hero() {
   return (
     <section
       className="relative min-h-screen w-full overflow-hidden"
-      style={{ backgroundColor: "#1a4a5a" }}
+      style={{ backgroundColor: "#2a6a7a" }}
     >
 
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://res.cloudinary.com/dmvpm094o/image/upload/f_auto,q_auto/Hero_ev3vgw"
-          alt="Aerial view of Zanzibar"
+          src="https://res.cloudinary.com/dmvpm094o/image/upload/w_1200,q_80,f_auto/Hero_ev3vgw"
+          alt="Aerial view of Zanzibar coastline"
           fetchPriority="high"
-          decoding="async"
-          className="w-full h-full object-cover object-center animate-kenburns"
+          decoding="sync"
+          loading="eager"
+          className="w-full h-full object-cover object-center"
         />
       </div>
 

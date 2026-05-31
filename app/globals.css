@@ -71,6 +71,22 @@ body {
 .animate-kenburns {
   animation: kenburns 16s ease-in-out infinite alternate;
   will-change: transform;
+  transform: translateZ(0);
+}
+
+/* GPU acceleration — eliminate scroll jank */
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+img {
+  will-change: auto;
+  transform: translateZ(0);
+}
+
+section {
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 /* Destination Intelligence Ribbon */
