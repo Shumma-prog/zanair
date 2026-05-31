@@ -89,17 +89,12 @@ export default function Hero() {
         {/* ── BACKGROUND IMAGE ── */}
         <div className="absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
           <div className="absolute inset-0 animate-kenburns">
-            <Image
-              src="/images/hero.jpg"
-              fill
-              priority
-              quality={90}
-              alt="Aerial view of Zanzibar coastline and Indian Ocean — ZanAir scenic flights"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
-              style={{
-                objectFit: "cover",
-                objectPosition: "center center",
-              }}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://res.cloudinary.com/dmvpm094o/image/upload/f_auto,q_auto/Hero_ev3vgw"
+              alt="Aerial view of Zanzibar coastline and Indian Ocean — ZanAir"
+              className="w-full h-full object-cover object-center"
+              style={{ willChange: "transform" }}
             />
           </div>
         </div>
