@@ -95,10 +95,10 @@ export default function Hero() {
               priority
               quality={90}
               alt="Aerial view of Zanzibar coastline and Indian Ocean — ZanAir scenic flights"
-              sizes="100vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
               style={{
                 objectFit: "cover",
-                objectPosition: "center",
+                objectPosition: "center center",
               }}
             />
           </div>
