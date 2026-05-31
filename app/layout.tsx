@@ -86,7 +86,13 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* Hero image preload — LCP */}
-        <link rel="preload" as="image" href="/images/hero.jpg" />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://res.cloudinary.com/dmvpm094o/image/upload/f_auto,q_auto/Hero_ev3vgw"
+          fetchPriority="high"
+        />
         <script
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger

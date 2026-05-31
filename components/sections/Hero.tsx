@@ -4,7 +4,10 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden">
+    <section
+      className="relative min-h-screen w-full overflow-hidden"
+      style={{ backgroundColor: "#1a4a5a" }}
+    >
 
       {/* Background image */}
       <div className="absolute inset-0 z-0">
@@ -12,6 +15,8 @@ export default function Hero() {
         <img
           src="https://res.cloudinary.com/dmvpm094o/image/upload/f_auto,q_auto/Hero_ev3vgw"
           alt="Aerial view of Zanzibar"
+          fetchPriority="high"
+          decoding="async"
           className="w-full h-full object-cover object-center animate-kenburns"
         />
       </div>

@@ -104,7 +104,7 @@ export default function Navbar() {
         role="banner"
         className="fixed top-0 left-0 right-0 z-50"
         style={{
-          backgroundColor: scrolled ? "#0A2533" : "transparent",
+          backgroundColor: scrolled ? "#0A2533" : "rgba(0,0,0,0.25)",
           borderBottom: scrolled
             ? "1px solid rgba(41,171,226,0.15)"
             : "1px solid transparent",
