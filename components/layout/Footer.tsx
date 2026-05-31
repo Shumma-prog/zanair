@@ -110,7 +110,12 @@ export default function Footer() {
               Services
             </h3>
             <ul className="space-y-2.5" role="list">
-              {navigation.links.map((link) => (
+              {[
+                { label: "Scheduled Flights", href: "/services/scheduled-flights" },
+                { label: "Charter Flights",   href: "/services/charter-flights" },
+                { label: "Scenic Flights",    href: "/scenic-flights" },
+                { label: "Transfers",         href: "/services/transfers" },
+              ].map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

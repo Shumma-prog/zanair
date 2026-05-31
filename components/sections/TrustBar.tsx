@@ -265,13 +265,15 @@ function IntelligenceCard({
 // ── Main component ────────────────────────────────────────────────────────────
 
 export default function TrustBar() {
-  const [time, setTime] = useState("—");
+  const [mounted, setMounted] = useState(false);
+  const [time, setTime] = useState("");
   const [sweep, setSweep] = useState(false);
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
   const [planeOffset, setPlaneOffset] = useState(0);
 
-  // Live EAT clock
+  // Live EAT clock — mounted flag prevents SSR/hydration mismatch
   useEffect(() => {
+    setMounted(true);
     const update = () => {
       const eat = new Date(
         new Date().toLocaleString("en-US", {
@@ -495,7 +497,7 @@ export default function TrustBar() {
             <IntelligenceCard
               key={card.id}
               card={card}
-              liveTime={time}
+              liveTime={mounted ? time : "—:— EAT"}
               planeOffset={planeOffset}
               isLast={i === CARDS.length - 1}
             />
